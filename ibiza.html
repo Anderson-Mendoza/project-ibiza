@@ -8,130 +8,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="ibiza.css">
 </head>
 
 <body>
-    <header class="menu__wrapper">
-        <div class="menu__bar">
-            <a href="#" title="Home" aria-label="home" class="logo">
-                <img src="" alt="">
-            </a>
-            <nav>
-                <ul class="navigation hide">
-                    <p>IBIZA</p>
-                    <li>
-                        <button>
-                            Brands
-                            <img src="/assets/right-arrow.png" alt="right-arrow" class="right-arrow">
-                        </button>
-                        <div class="dropdown__wrapper">
-                            <div class="dropdown">
-                                <ul class="list-items-with-description">
-                                    <li>
-                                        <div class="item-title">
-                                            <h3>Ibiza</h3>
-                                            <p></p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="item-title">
-                                            <h3>Stylo</h3>
-                                            <p></p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="item-title">
-                                            <h3>Colors</h3>
-                                            <p></p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="item-title">
-                                            <h3></h3>
-                                            <p></p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="item-title">
-                                            <h3></h3>
-                                            <p></p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                       <img src="" alt="">
-                                        <div class="item-title">
-                                            <h3></h3>
-                                            <p></p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#Clothes" title="Clothes">
-                            Clothes
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#Footwear" title="Footwear">
-                            Footwear
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#Bathing dresses" title="Bathing dresses">
-                            Bathing Dresses
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#Sport" title="Sport">
-                            Sport
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#Lingerie" title="Lingerie">
-                            Lingerie
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#Handbags" title="Handbags">
-                            Handbags
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#Accessories" title="Accessories">
-                            Accessories
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#Offers" title="Offers">
-                            Offers
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="action-buttons hide">
-            <a href="#log-in" title="Log in" class="secondary">
-                Log In
-            </a>
-            <a href="#sign-up" title="Sign up" class="primary">
-                Sign up
-            </a>
-        </div>
-        <button aria-label="Open menu" class="burger-menu" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24"
-                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M4 8l16 0" />
-                <path d="M4 16l16 0" />
-            </svg>
-        </button>
+    <header class="header">
+    <section id="header">
+        <h1>IBIZA</h1>
+        <h3>Fashion Store</h3>
+    </section>
     </header>
+    <button class="panel-btn hamburger--elastic " type="button">
+        <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+        </span>
+     </button>
+  
+    <aside class="panel">
+      <nav class="menu">
+        <a href="#header">IBIZA</a>
+        <a href="#seccion2">seccion 2</a>
+        <a href="#seccion3">seccion 3</a>
+        <a href="#seccion4">seccion 4</a>
+        <a href="#seccion5">seccion 5</a>
+      </nav>
+    </aside>
     <main>
+
         <section class="container-advertisement">
             <img src="./assets/pexels-rachel-claire-5864245.jpg" alt="background">
             <p>Clothes from -20% off</p>
@@ -141,95 +45,86 @@
         <div class="gallery">
             <figure class="card">
                 <img
-                    src=""
-                    alt=""
+                    src="./assets/img_models/model1.jpg"
+                    alt="modelo1"
                 >
             </figure>
             <figure class="card">
                 <img
-                    src=""
-                    alt=""
+                    src="./assets/img_models/model2.jpg"
+                    alt="modelo2"
                 >
             </figure>
             <figure class="card">
                 <img
-                    src=""
-                    alt=""
+                    src="./assets/img_models/model3.jpg"
+                    alt="modelo3"
                 >
             </figure>
             <figure class="card">
-               <img src="" alt="">
+               <img src="./assets/img_models/model4.jpg" alt="modelo4">
             </figure>
             <figure class="card">
                 <img
-                    src=""
-                    alt=""
-                >
-            </figure>
-            <figure class="card">
-                <img
-                    src=""
-                    alt=""
+                    src="./assets/img_models/model1.jpg"
+                    alt="modelo1"
                 >
             </figure>
             <figure class="card">
                 <img
-                    src=""
-                    alt=""
+                    src="./assets/img_models/model2.jpg"
+                    alt="modelo2"
                 >
             </figure>
             <figure class="card">
                 <img
-                    src=""
-                    alt=""
+                    src="./assets/img_models/model3.jpg"
+                    alt="modelo3"
                 >
             </figure>
             <figure class="card">
                 <img
-                    src=""
-                    alt=""
+                    src="./assets/img_models/model4.jpg"
+                    alt="modelo4"
                 >
             </figure>
             <figure class="card">
                 <img
-                    src=""
-                    alt=""
+                    src="./assets/img_models/model1.jpg"
+                    alt="modelo1"
+                >
+            </figure>
+            <figure class="card">
+                <img
+                    src="./assets/img_models/model2.jpg"
+                    alt="modelo2"
                 >
             </figure>
           
         </div>            
        </section>
+
+    
+       <section id="seccion2" class="section">
+        <h2>sección 2</h2>
+       </section>
+    
+       <section id="seccion3" class="section">
+        <h2>sección 3</h2>
+       </section>
+    
+       <section id="seccion4" class="section">
+        <h2>sección 4</h2>
+       </section>
+    
+       <section id="seccion5" class="section">
+        <h2>sección 5</h2>
+       </section>
     </main>
     <footer>
-        <div class="footer-title">
-            <h3>IBIZA</h3>
-            <p>Fashion Store</p>
-        </div>
-        <section>
-            <div class="information-store">
-                <ul>
-                    <li>
-                        <button>
-                            About us
-                            <img src="/assets/right-arrow.png" alt="right-arrow" class="right-arrow">
-                        </button>
-                    </li>
-                    <li>
-                        <button>
-                            Store
-                            <img src="/assets/right-arrow.png" alt="right-arrow" class="right-arrow">
-                        </button>
-                    </li>
-                    <li>
-                        <button>
-                            Information
-                            <img src="/assets/right-arrow.png" alt="right-arrow" class="right-arrow">
-                        </button>                     
-                    </li>
-                </ul>
-            </div>
-        </section>
+       
     </footer>
+    <script type="module" src="/ibiza.js"></script>
 </body>
 
 </html>
