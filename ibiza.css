@@ -133,8 +133,6 @@ body {
 
 /* ******* main  ******* */
 .container-advertisement {
-  margin-left: auto;
-  margin-right: auto;
   height: 500px;
   width: 100%;
 }
@@ -208,6 +206,13 @@ body {
   border-radius: 1rem;
 }
 
+/* tienda */
+
+.store {
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
 .title-store {
   padding: 30px;
   margin-top: 60px;
@@ -243,3 +248,59 @@ body {
 }
 
 /* seccion footer */
+
+footer {
+  background-color: var(--color-1);
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.social-networks {
+  padding: 50px;
+  text-align: center;
+}
+
+.social-networks p {
+  color: var(--background);
+  padding-bottom: 25px;
+}
+
+.fa-brands {
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+  padding: 5px;
+  background: var(--background);
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.form-email {
+  padding: 50px;
+  text-align: center;
+}
+
+.form-email p {
+  color: var(--background);
+  padding-bottom: 25px;
+}
+
+.copyright {
+  padding-top: 100px;
+  margin: 0;
+}
+
+.contact {
+  padding: 50px;
+  text-align: center;
+}
+
+.contact p {
+  color: var(--background);
+}
+
+.help-title {
+  padding-bottom: 25px;
+}

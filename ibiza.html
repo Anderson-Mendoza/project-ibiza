@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>project ibiza </title>
+    <script src="https://kit.fontawesome.com/a71dd4e467.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -13,8 +14,10 @@
 </head>
 
 <body>
+    <span id="seccion0"></span>
+    <!-- HEADER AÑADIR DETALLES, MEJORAR PRESENTACION  -->
     <header class="header">
-    <section id="header">  
+    <section >  
         <h1>IBIZA</h1>
         <h3>Fashion Store</h3>
     </section>
@@ -24,25 +27,30 @@
         <span class="hamburger-inner"></span>
         </span>
      </button>
-  
+
+  <!-- ASIDE, CONTENIDO QUE SE ACCIONA DESPUES DE HACER CLICK EN EL BOTON MENU  -->
     <aside class="panel">
       <nav class="menu">
-        <a href="#header"> inicio</a>
+        <a href="#seccion0"> inicio</a>
         <a href="#seccion1">Tienda</a>
-        <a href="#seccion2">seccion 2</a>
+        <!-- <a href="#seccion2">seccion 2</a>
         <a href="#seccion3">seccion 3</a>
         <a href="#seccion4">seccion 4</a>
-        <a href="#seccion5">seccion 5</a>
+        <a href="#seccion5">seccion 5</a> -->
       </nav>
     </aside>
-    <main>
 
-        <section class="container-advertisement">
-            <img src="./assets/pexels-rachel-claire-5864245.jpg" alt="background">
+    <main >
+
+    <!-- ANUNCIO PRINCIPAL, BUSCAR LA MANERA DE QUE CAMBIE LA IMAGEN COMO UNA PASARELA DE IMAGENES AUTOMATICAMENTE -->
+        <section  class="container-advertisement">
+            <img src="./assets/pexels-rachel-claire-5864245.jpg" alt="background" >
             <p >Clothes from -20% off</p>
         </section>
+
         <p class="paragraph">Envios gratis a todo el pais</p>
         <p class="information-text">¡Essentials in your closet!</p>
+        
        <section class="container-cards">
         <div class="gallery">
             <figure class="card">
@@ -107,7 +115,7 @@
        </section>
       
 
-    
+    <!-- SECCIONES DONDE VAMOS A COLOCAR PARTE DE LOS ARTICULOS A VENDER PRENDAS VOLSOS ETC -->
        <section id="seccion1" class="store">
        <div>
         <h2 class="title-store">Tienda</h2>
@@ -226,7 +234,7 @@
         
        </section>
 
-       <section id="seccion2" class="section">
+       <!-- <section id="seccion2" class="section">
         <h2>sección 2</h2>
        </section>
     
@@ -240,12 +248,39 @@
     
        <section id="seccion5" class="section">
         <h2>sección 5</h2>
-       </section>
+       </section> -->
     </main>
+
     <footer>
+       <div class="social-networks">
+           <p>SIGUE CONECTADO</p>
+           <span ><i class="fa-brands fa-facebook"></i></span>
+           <span ><i class="fa-brands fa-instagram"></i></span>
+           <span ><i class="fa-brands fa-x-twitter"></i></span>
+       </div>
+
+       <div class="form-email">
+         <p>ESCRIBENOS</p>
+         <form action="submit">
+            <input class="input-footer" type="text" placeholder="Ingresa tu email aqui">
+         </form>
+         <button class="button-footer"> Unirse </button>
+
+         <p class="copyright"> 2025 hecho para IBIZA Fashion Store.</p>
+
+       </div>
+
        
+        <div class="contact">
+                <p class="help-title"> ¿NECESITAS AYUDA?</p>
+                <P> 313-5350-238</P>
+                <p> info@ibizafstore.com</p>
+        </div>       
     </footer>
+
+
     <script type="module" src="/ibiza.js"></script>
+
 </body>
 
 </html>
