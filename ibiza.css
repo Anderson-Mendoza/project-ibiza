@@ -6,6 +6,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Prata&display=swap");
 :root {
+  --color-1: #0d1321;
+  --color-2: #1d2d44;
+  --color-3: #3e5c76;
+  --color-4: #748cab;
+  --color-5: #f0ebd8;
+  --color-6: #c2c5aa;
   --primary: #000000;
   --background: #fafafa;
   --secondary-background: #f2f2f2;
@@ -51,15 +57,15 @@ body {
   text-align: center;
   position: sticky;
   top: 0;
-  padding: 0.5rem;
-  background-color: var(--main-color);
-  color: var(--second-color);
+  padding: 0.2rem;
+  background-color: var(--color-1);
+  color: var(--background);
   z-index: 998;
 }
 
 .section {
-  padding: 2rem;
-  padding-top: 5rem;
+  padding: 6rem;
+  padding-top: 6rem;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -97,7 +103,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--main-color);
+  background-color: var(--color-4);
 }
 
 .menu {
@@ -129,12 +135,19 @@ body {
 .container-advertisement {
   margin-left: auto;
   margin-right: auto;
+  height: 500px;
   width: 100%;
-  min-height: 100vh;
 }
 
 .container-advertisement img {
+  height: 500px;
   width: 100%;
+}
+
+.paragraph {
+  text-align: center;
+  background-color: var(--color-6);
+  padding: 10px 10px;
 }
 
 .container-advertisement p {
@@ -150,11 +163,10 @@ body {
 }
 
 .information-text {
-  display: grid;
-  place-items: center;
+  text-align: center;
   font-size: 2rem;
   font-weight: bolder;
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
@@ -168,7 +180,7 @@ body {
 .gallery {
   display: flex;
   gap: 1rem;
-  max-width: 80rem;
+  max-width: 90rem;
 }
 
 .card {
@@ -194,6 +206,40 @@ body {
   font-weight: bold;
   cursor: pointer;
   border-radius: 1rem;
+}
+
+.title-store {
+  padding: 30px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.container-card img {
+  padding-left: 10px;
+  height: 350px;
+  width: 250px;
+}
+
+.container-card {
+  padding: 20px;
+  background-color: var(--gray);
+}
+
+.info-product {
+  margin-left: 20px;
+}
+
+.info-product button {
+  border: none;
+  background-color: var(--gray);
+  cursor: pointer;
+}
+
+.store-cards {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  gap: 50px;
+  justify-content: center;
 }
 
 /* seccion footer */
