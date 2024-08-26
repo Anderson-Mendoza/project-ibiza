@@ -133,12 +133,12 @@ body {
 
 /* ******* main  ******* */
 .container-advertisement {
-  height: 500px;
+  height: 40rem;
   width: 100%;
 }
 
 .container-advertisement img {
-  height: 500px;
+  height: 40rem;
   width: 100%;
 }
 
@@ -220,14 +220,17 @@ body {
 }
 
 .container-card img {
-  padding-left: 10px;
   height: 350px;
   width: 250px;
+  border-radius: 1rem;
 }
 
 .container-card {
+  margin: auto;
   padding: 20px;
   background-color: var(--gray);
+  border-radius: 1rem;
+  box-shadow: 10px 10px 22px rgba(0, 0, 0, 0.3);
 }
 
 .info-product {
