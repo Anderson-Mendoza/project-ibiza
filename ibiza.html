@@ -1,286 +1,244 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IBIZA Fashion Store</title>
+    <script
+      src="https://kit.fontawesome.com/a71dd4e467.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+      integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="ibiza.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>project ibiza </title>
-    <script src="https://kit.fontawesome.com/a71dd4e467.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="ibiza.css">
-</head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand" aria-label="IBIZA Fashion Store">
+          <span class="brand-mark">I</span>
+          <div>
+            <strong>IBIZA</strong>
+            <small>Fashion Store</small>
+          </div>
+        </div>
 
-<body>
-    <span id="seccion0"></span>
-    <!-- HEADER AÑADIR DETALLES, MEJORAR PRESENTACION  -->
-    <header class="header">
-    <section >  
-        <h1>IBIZA</h1>
-        <h3>Fashion Store</h3>
-    </section>
+        <nav class="main-nav" aria-label="Navegación principal">
+          <a href="#inicio">Inicio</a>
+          <a href="#categorias">Categorías</a>
+          <a href="#destacados">Destacados</a>
+          <a href="#tienda">Tienda</a>
+        </nav>
+
+        <div class="topbar-actions">
+          <button class="mini-btn" type="button">Buscar</button>
+          <button class="mini-btn cart-toggle" type="button">
+            <span>Carrito</span>
+            <span class="cart-count" id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
     </header>
-    <button class="panel-btn hamburger--elastic " type="button">
-        <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-        </span>
-     </button>
 
-  <!-- ASIDE, CONTENIDO QUE SE ACCIONA DESPUES DE HACER CLICK EN EL BOTON MENU  -->
+    <button
+      class="panel-btn hamburger--elastic"
+      type="button"
+      aria-label="Abrir menú"
+    >
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
     <aside class="panel">
       <nav class="menu">
-        <a href="#seccion0"> inicio</a>
-        <a href="#seccion1">Tienda</a>
-        <!-- <a href="#seccion2">seccion 2</a>
-        <a href="#seccion3">seccion 3</a>
-        <a href="#seccion4">seccion 4</a>
-        <a href="#seccion5">seccion 5</a> -->
+        <a href="#inicio">Inicio</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#destacados">Destacados</a>
+        <a href="#tienda">Tienda</a>
       </nav>
     </aside>
 
-    <main >
+    <main id="inicio">
+      <section class="hero-slider" aria-label="Carrusel de promociones">
+        <div class="hero-track" id="hero-track"></div>
+        <div
+          class="hero-dots"
+          id="hero-dots"
+          aria-label="Seleccionar anuncio"
+        ></div>
+      </section>
 
-    <!-- ANUNCIO PRINCIPAL, BUSCAR LA MANERA DE QUE CAMBIE LA IMAGEN COMO UNA PASARELA DE IMAGENES AUTOMATICAMENTE -->
-        <section  class="container-advertisement">
-            <img src="./assets/pexels-rachel-claire-5864245.jpg" alt="background" >
-            <p >Clothes from -20% off</p>
-        </section>
-
-        <p class="paragraph">Envios gratis a todo el pais</p>
-        <p class="information-text">¡Essentials in your closet!</p>
-        
-       <section class="container-cards">
-        <div class="gallery">
-            <figure class="card">
-                <img
-                    src="./assets/img_models/model1.jpg"
-                    alt="modelo1"
-                >
-            </figure>
-            <figure class="card">
-                <img
-                    src="./assets/img_models/model2.jpg"
-                    alt="modelo2"
-                >
-            </figure>
-            <figure class="card">
-                <img
-                    src="./assets/img_models/model3.jpg"
-                    alt="modelo3"
-                >
-            </figure>
-            <figure class="card">
-               <img src="./assets/img_models/model4.jpg" alt="modelo4">
-            </figure>
-            <figure class="card">
-                <img
-                    src="./assets/img_models/model1.jpg"
-                    alt="modelo1"
-                >
-            </figure>
-            <figure class="card">
-                <img
-                    src="./assets/img_models/model2.jpg"
-                    alt="modelo2"
-                >
-            </figure>
-            <figure class="card">
-                <img
-                    src="./assets/img_models/model3.jpg"
-                    alt="modelo3"
-                >
-            </figure>
-            <figure class="card">
-                <img
-                    src="./assets/img_models/model4.jpg"
-                    alt="modelo4"
-                >
-            </figure>
-            <figure class="card">
-                <img
-                    src="./assets/img_models/model1.jpg"
-                    alt="modelo1"
-                >
-            </figure>
-            <figure class="card">
-                <img
-                    src="./assets/img_models/model2.jpg"
-                    alt="modelo2"
-                >
-            </figure>
-          
-        </div>            
-       </section>
-      
-
-    <!-- SECCIONES DONDE VAMOS A COLOCAR PARTE DE LOS ARTICULOS A VENDER PRENDAS VOLSOS ETC -->
-       <section id="seccion1" class="store">
-       <div>
-        <h2 class="title-store">Tienda</h2>
-       </div>
-
-        <div class="store-cards">
-            <article class="container-card">
-                    <img src="/assets/img_models/model1.jpg" alt="productos en tienda">
-                    <span></span>
-                    <div class="info-product">
-                        <p>Soy un producto</p>
-                        <button>$0000</button>
-                    </div>
-             </article>
-
-             <article class="container-card">
-                    <img src="/assets/img_models/model2.jpg" alt="productos en tienda">
-                    <span></span>
-                    <div class="info-product">
-                        <p>Soy un producto</p>
-                        <button>$0000</button>
-                    </div>
-             </article>
-
-             <article class="container-card">
-                    <img src="/assets/img_models/model3.jpg" alt="productos en tienda">
-                    <span></span>
-                    <div class="info-product">
-                        <p>Soy un producto</p>
-                        <button>$0000</button>
-                    </div>
-             </article>
-
-             <article class="container-card">
-                <img src="/assets/img_models/model4.jpg" alt="productos en tienda">
-                <span></span>
-                <div class="info-product">
-                    <p>Soy un producto</p>
-                    <button>$0000</button>
-                </div>
-             </article>
-
-             <article class="container-card">
-                    <img src="/assets/img_models/model1.jpg" alt="productos en tienda">
-                    <span></span>
-                    <div class="info-product">
-                        <p>Soy un producto</p>
-                        <button>$0000</button>
-                    </div>
-             </article>
-
-             <article class="container-card">
-                  <img src="/assets/img_models/model2.jpg" alt="productos en tienda">
-                  <span></span>
-                  <div class="info-product">
-                    <p>Soy un producto</p>
-                    <button>$0000</button>
-                </div>
-             </article>
-
-             <article class="container-card">
-                  <img src="/assets/img_models/model3.jpg" alt="productos en tienda">
-                  <span></span>
-                  <div class="info-product">
-                    <p>Soy un producto</p>
-                    <button>$0000</button>
-                </div>
-             </article>
-
-             <article class="container-card">
-                  <img src="/assets/img_models/model4.jpg" alt="productos en tienda">
-                  <span></span>
-                  <div class="info-product">
-                    <p>Soy un producto</p>
-                    <button>$0000</button>
-                </div>
-             </article>
-
-             <article class="container-card">
-                  <img src="/assets/img_models/model1.jpg" alt="productos en tienda">
-                  <span></span>
-                  <div class="info-product">
-                    <p>Soy un producto</p>
-                    <button>$0000</button>
-                </div>
-             </article>
-
-             <article class="container-card">
-                  <img src="/assets/img_models/model2.jpg" alt="productos en tienda">
-                  <span></span>
-                  <div class="info-product">
-                    <p>Soy un producto</p>
-                    <button>$0000</button>
-                </div>
-             </article>
-
-             <article class="container-card">
-                  <img src="/assets/img_models/model3.jpg" alt="productos en tienda">
-                  <span></span>
-                  <div class="info-product">
-                    <p>Soy un producto</p>
-                    <button>$0000</button>
-                </div>
-             </article>
-
-             <article class="container-card"> 
-                  <img src="/assets/img_models/model4.jpg" alt="productos en tienda">
-                  <span></spa>
-                    <div class="info-product">
-                        <p>Soy un producto</p>
-                        <button>$0000</button>
-                    </div>    
-             </article>
-             
+      <section class="benefits" aria-label="Beneficios">
+        <div class="benefit-item">
+          <i class="fa-solid fa-truck-fast"></i>
+          <div>
+            <strong>Envío gratis</strong>
+            <span>En compras superiores a $150</span>
+          </div>
         </div>
-        
-       </section>
+        <div class="benefit-item">
+          <i class="fa-solid fa-shield-heart"></i>
+          <div>
+            <strong>Garantía</strong>
+            <span>Calidad premium en cada pieza</span>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <i class="fa-solid fa-repeat"></i>
+          <div>
+            <strong>Devoluciones</strong>
+            <span>Fáciles y sin complicaciones</span>
+          </div>
+        </div>
+      </section>
 
-       <!-- <section id="seccion2" class="section">
-        <h2>sección 2</h2>
-       </section>
-    
-       <section id="seccion3" class="section">
-        <h2>sección 3</h2>
-       </section>
-    
-       <section id="seccion4" class="section">
-        <h2>sección 4</h2>
-       </section>
-    
-       <section id="seccion5" class="section">
-        <h2>sección 5</h2>
-       </section> -->
+      <section id="categorias" class="categories">
+        <div class="section-heading">
+          <p>Explora</p>
+          <h2>Categorías</h2>
+        </div>
+        <div class="category-grid" id="category-grid"></div>
+      </section>
+
+      <section id="destacados" class="featured">
+        <div class="section-heading">
+          <p>Selección</p>
+          <h2>Lo más vendido</h2>
+        </div>
+        <div class="featured-grid" id="featured-grid"></div>
+      </section>
+
+      <section id="tienda" class="shop">
+        <div class="shop-header">
+          <div class="section-heading left">
+            <p>Tienda</p>
+            <h2>Compra la esencia de IBIZA</h2>
+          </div>
+          <div class="shop-filters" id="shop-filters">
+            <button type="button" class="filter active" data-filter="Todo">
+              Todo
+            </button>
+            <button type="button" class="filter" data-filter="Abrigos">
+              Abrigos
+            </button>
+            <button type="button" class="filter" data-filter="Vestidos">
+              Vestidos
+            </button>
+            <button type="button" class="filter" data-filter="Accesorios">
+              Accesorios
+            </button>
+          </div>
+        </div>
+
+        <div class="shop-layout">
+          <div class="product-grid" id="product-grid"></div>
+
+          <aside class="product-detail" id="product-detail" aria-live="polite">
+            <p class="detail-label">Vista rápida</p>
+            <h3>Selecciona un producto</h3>
+          </aside>
+        </div>
+      </section>
+
+      <section class="lookbook">
+        <div class="section-heading">
+          <p>Inspiración</p>
+          <h2>Lookbook</h2>
+        </div>
+
+        <div class="lookbook-grid">
+          <article class="look-card tall">
+            <img
+              src="./assets/img_models/model2.jpg"
+              alt="Lookbook editorial 1"
+            />
+          </article>
+          <article class="look-card">
+            <img
+              src="./assets/img_models/model3.jpg"
+              alt="Lookbook editorial 2"
+            />
+          </article>
+          <article class="look-card">
+            <img
+              src="./assets/img_models/model4.jpg"
+              alt="Lookbook editorial 3"
+            />
+          </article>
+        </div>
+      </section>
     </main>
 
-    <footer>
-       <div class="social-networks">
-           <p>SIGUE CONECTADO</p>
-           <span ><i class="fa-brands fa-facebook"></i></span>
-           <span ><i class="fa-brands fa-instagram"></i></span>
-           <span ><i class="fa-brands fa-x-twitter"></i></span>
-       </div>
+    <aside class="cart-panel" id="cart-panel" aria-live="polite">
+      <div class="cart-header">
+        <h3>Carrito</h3>
+        <button type="button" class="cart-close" id="cart-close">✕</button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total-row">
+          <span>Total</span>
+          <strong id="cart-total">$0</strong>
+        </div>
+        <button type="button" class="cta primary full">Finalizar compra</button>
+      </div>
+    </aside>
 
-       <div class="form-email">
-         <p>ESCRIBENOS</p>
-         <form action="submit">
-            <input class="input-footer" type="text" placeholder="Ingresa tu email aqui">
-         </form>
-         <button class="button-footer"> Unirse </button>
+    <div class="modal-overlay hidden" id="product-modal" aria-hidden="true">
+      <div
+        class="modal-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <button type="button" class="modal-close" id="modal-close">✕</button>
+        <div class="modal-content" id="modal-content"></div>
+      </div>
+    </div>
 
-         <p class="copyright"> 2025 hecho para IBIZA Fashion Store.</p>
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <div class="social-networks">
+          <p>SIGUE CONECTADO</p>
+          <span><i class="fa-brands fa-facebook"></i></span>
+          <span><i class="fa-brands fa-instagram"></i></span>
+          <span><i class="fa-brands fa-x-twitter"></i></span>
+        </div>
 
-       </div>
+        <div class="form-email">
+          <p>ESCRIBENOS</p>
+          <form action="submit">
+            <input
+              class="input-footer"
+              type="text"
+              placeholder="Ingresa tu email aqui"
+            />
+          </form>
+          <button class="button-footer" type="button">Unirse</button>
+          <p class="copyright">2025 hecho para IBIZA Fashion Store.</p>
+        </div>
 
-       
         <div class="contact">
-                <p class="help-title"> ¿NECESITAS AYUDA?</p>
-                <P> 313-5350-238</P>
-                <p> info@ibizafstore.com</p>
-        </div>       
+          <p class="help-title">¿NECESITAS AYUDA?</p>
+          <p>313-5350-238</p>
+          <p>info@ibizafstore.com</p>
+        </div>
+      </div>
     </footer>
 
-
-    <script type="module" src="/ibiza.js"></script>
-
-</body>
-
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>
